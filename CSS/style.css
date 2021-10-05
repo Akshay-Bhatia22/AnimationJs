@@ -6,8 +6,8 @@
     margin:auto;
     height:50vw;
     width:50vw;
-    background-color: chocolate;
-    padding:10% 20% 10% 20%;
+    background-color: rgb(255, 255, 255);
+    padding:3% 20% 3% 20%;
 }
 #my_animation {
     padding:4%;
@@ -30,7 +30,15 @@
     width:30vw;
     margin:auto;
     position:fixed;
-    background-color: black;
+    background-color: rgb(0, 56, 121);
     border-radius: 100%;
     z-index: 1;
+}
+#shoe img{
+    padding:4%;
+    height:30vw;
+    width:30vw;
+    position:fixed;
+    z-index: 3;
+    
 }

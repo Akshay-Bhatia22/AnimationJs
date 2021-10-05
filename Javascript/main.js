@@ -1,9 +1,14 @@
+function main() {
+    clicked();
+    rotation();
+}
+
 function clicked() {
     var elem = document.getElementById("my_animation");
     var scale = 0 ;
-    var status = setInterval(frame,90);
+    var status = setInterval(frame,70);
     function frame() {
-        if (scale>0.5)
+        if (scale>0.7)
         {
             scale = 0;
         }
@@ -12,6 +17,24 @@ function clicked() {
             elem.style.transform = `scale(${scale},${scale})`;
         }
     }
+
+function rotation()
+{
+    var shoe_elem = document.getElementById("shoe");
+    var rotate_deg = 0;
+    var status = setInterval(frame_motion, 10);
+    function frame_motion() {
+        if (rotate_deg>100)
+        {
+            rotate_deg=0;
+        }
+        else {
+            rotate_deg++;
+            elem.style.transform = `rotate(${rotate}deg)`;
+        }
+
+    }
+}
     // // calls the function every 10 milisecond
     // var id = setInterval(frame, 10);
     // function frame () {

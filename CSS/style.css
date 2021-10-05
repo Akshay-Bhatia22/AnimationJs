@@ -1,0 +1,36 @@
+* {
+    margin:0;
+    padding:0;
+}
+#container {
+    margin:auto;
+    height:50vw;
+    width:50vw;
+    background-color: chocolate;
+    padding:10% 20% 10% 20%;
+}
+#my_animation {
+    padding:4%;
+    height:30vw;
+    width:30vw;
+    margin:auto;
+    background-color: cornflowerblue;
+    border-radius: 100%;
+    position:fixed;
+    z-index: 2;
+}
+.circle {
+    background-color: aqua;
+    border-radius: 100%;
+    
+}
+.behind {
+    padding:4%;
+    height:30vw;
+    width:30vw;
+    margin:auto;
+    position:fixed;
+    background-color: black;
+    border-radius: 100%;
+    z-index: 1;
+}

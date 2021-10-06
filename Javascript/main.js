@@ -18,31 +18,15 @@ function clicked() {
         }
     }
 }
-// function rotation()
-// {
-//     var shoe_elem = document.getElementById("shoe");
-//     var rotate_deg = 0;
-//     var status = setInterval(frame_motion, 10);
-//     function frame_motion() {
-//         if (rotate_deg>100)
-//         {
-//             rotate_deg=0;
-//         }
-//         else {
-//             rotate_deg++;
-//             elem.style.transform = `rotate(${rotate}deg)`;
-//         }
 
-//     }
-// }
 function translation()
 {
     var nk_text = document.getElementById("nike");
     var pos = 0;
     var count = 0;
-    var status = setInterval(frame_motion, 90);
+    var status = setInterval(frame_motion, 60);
     function frame_motion() {
-        if (count<5)
+        if (count<10)
         {
             if (pos>100)
             {
@@ -52,6 +36,7 @@ function translation()
             else {
                 pos++;
                 nk_text.style.paddingLeft = pos +'%';
+                nk_text.style.opacity = 1-(pos/100);
             }
         }
         else {
@@ -61,21 +46,3 @@ function translation()
     // console.log("ran");
     // document.querySelector("#nike").style.padding = '10%';
 }
-    // // calls the function every 10 milisecond
-    // var id = setInterval(frame, 10);
-    // function frame () {
-    //     console.log(pos);
-    //     if (pos==350)
-    //     {
-    //         clearInterval(id);
-    //     }
-    //     else {
-    //         pos++;
-    //         if (pos>300)
-    //         {
-    //             elem.style.transform = `scale(${pos-300},${pos-300})`;
-    //         }
-    //         elem.style.top = pos+'px';
-    //         elem.style.left = pos+'px';
-    //     }
-    // }
